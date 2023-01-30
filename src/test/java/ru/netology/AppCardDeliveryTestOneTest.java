@@ -7,11 +7,11 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.concurrent.locks.Condition;
 
-import static con.codeborne.selenide.Selenide.$;
-import static con.codeborne.selenide.Selenide.open;
-
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
 public class AppCardDeliveryTestOneTest {
+
     private String generateDate(int assDays, String patter) {
         return LocalDate.now().plusDays(addDays).format(DateTimeFormatter.ofPattern(pattern));
     }
